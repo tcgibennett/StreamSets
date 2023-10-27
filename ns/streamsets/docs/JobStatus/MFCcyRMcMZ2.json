@@ -1,0 +1,118 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "jobId": {
+      "type": "string"
+    },
+    "pipelineCommitId": {
+      "type": "string"
+    },
+    "runCount": {
+      "type": "integer"
+    },
+    "user": {
+      "type": "string"
+    },
+    "startTime": {
+      "type": "integer"
+    },
+    "finishTime": {
+      "type": "integer"
+    },
+    "errorMessage": {
+      "type": "null"
+    },
+    "color": {
+      "type": "string"
+    },
+    "sdcIds": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "status": {
+      "type": "string"
+    },
+    "errorInfos": {
+      "type": "array",
+      "items": {}
+    },
+    "warnings": {
+      "type": "array",
+      "items": {}
+    },
+    "ackTrackers": {
+      "type": "array",
+      "items": {}
+    },
+    "pipelineOffsets": {
+      "type": "null"
+    },
+    "pipelineStatus": {
+      "type": "array",
+      "items": {}
+    },
+    "upgradeStatus": {
+      "type": "null"
+    },
+    "pipelineCommitLabel": {
+      "type": "null"
+    },
+    "edge": {
+      "type": "boolean"
+    },
+    "inputRecordCount": {
+      "type": "integer"
+    },
+    "outputRecordCount": {
+      "type": "integer"
+    },
+    "errorRecordCount": {
+      "type": "integer"
+    },
+    "lastReportedMetricTime": {
+      "type": "integer"
+    },
+    "enginePipelineId": {
+      "type": "string"
+    },
+    "runtimeAttributes": {
+      "type": "array",
+      "items": {}
+    }
+  },
+  "required": [
+    "id",
+    "jobId",
+    "pipelineCommitId",
+    "runCount",
+    "user",
+    "startTime",
+    "finishTime",
+    "errorMessage",
+    "color",
+    "sdcIds",
+    "status",
+    "errorInfos",
+    "warnings",
+    "ackTrackers",
+    "pipelineOffsets",
+    "pipelineStatus",
+    "upgradeStatus",
+    "pipelineCommitLabel",
+    "edge",
+    "inputRecordCount",
+    "outputRecordCount",
+    "errorRecordCount",
+    "lastReportedMetricTime",
+    "enginePipelineId",
+    "runtimeAttributes"
+  ]
+}

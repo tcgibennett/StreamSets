@@ -1,0 +1,307 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "jobs": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string"
+            },
+            "name": {
+              "type": "string"
+            },
+            "description": {
+              "type": "null"
+            },
+            "organization": {
+              "type": "string"
+            },
+            "creator": {
+              "type": "string"
+            },
+            "createTime": {
+              "type": "integer"
+            },
+            "lastModifiedBy": {
+              "type": "string"
+            },
+            "lastModifiedOn": {
+              "type": "integer"
+            },
+            "destroyer": {
+              "type": "null"
+            },
+            "deleteTime": {
+              "type": "integer"
+            },
+            "jobDeleted": {
+              "type": "boolean"
+            },
+            "pipelineName": {
+              "type": "string"
+            },
+            "pipelineId": {
+              "type": "string"
+            },
+            "pipelineCommitId": {
+              "type": "string"
+            },
+            "rulesId": {
+              "type": "string"
+            },
+            "pipelineCommitLabel": {
+              "type": "string"
+            },
+            "labels": {
+              "type": "array",
+              "items": {}
+            },
+            "currentJobStatus": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "jobId": {
+                  "type": "string"
+                },
+                "pipelineCommitId": {
+                  "type": "string"
+                },
+                "runCount": {
+                  "type": "integer"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "startTime": {
+                  "type": "integer"
+                },
+                "finishTime": {
+                  "type": "integer"
+                },
+                "errorMessage": {
+                  "type": "null"
+                },
+                "color": {
+                  "type": "string"
+                },
+                "sdcIds": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "string"
+                    }
+                  ]
+                },
+                "status": {
+                  "type": "string"
+                },
+                "errorInfos": {
+                  "type": "array",
+                  "items": {}
+                },
+                "warnings": {
+                  "type": "array",
+                  "items": {}
+                },
+                "ackTrackers": {
+                  "type": "array",
+                  "items": {}
+                },
+                "pipelineOffsets": {
+                  "type": "null"
+                },
+                "pipelineStatus": {
+                  "type": "array",
+                  "items": {}
+                },
+                "upgradeStatus": {
+                  "type": "null"
+                },
+                "pipelineCommitLabel": {
+                  "type": "null"
+                },
+                "edge": {
+                  "type": "boolean"
+                },
+                "inputRecordCount": {
+                  "type": "integer"
+                },
+                "outputRecordCount": {
+                  "type": "integer"
+                },
+                "errorRecordCount": {
+                  "type": "integer"
+                },
+                "lastReportedMetricTime": {
+                  "type": "integer"
+                },
+                "enginePipelineId": {
+                  "type": "string"
+                },
+                "runtimeAttributes": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "required": [
+                "id",
+                "jobId",
+                "pipelineCommitId",
+                "runCount",
+                "user",
+                "startTime",
+                "finishTime",
+                "errorMessage",
+                "color",
+                "sdcIds",
+                "status",
+                "errorInfos",
+                "warnings",
+                "ackTrackers",
+                "pipelineOffsets",
+                "pipelineStatus",
+                "upgradeStatus",
+                "pipelineCommitLabel",
+                "edge",
+                "inputRecordCount",
+                "outputRecordCount",
+                "errorRecordCount",
+                "lastReportedMetricTime",
+                "enginePipelineId",
+                "runtimeAttributes"
+              ]
+            },
+            "currentUpgradeStatus": {
+              "type": "null"
+            },
+            "parentJobId": {
+              "type": "null"
+            },
+            "systemJobId": {
+              "type": "null"
+            },
+            "numInstances": {
+              "type": "integer"
+            },
+            "migrateOffsets": {
+              "type": "boolean"
+            },
+            "statsRefreshInterval": {
+              "type": "integer"
+            },
+            "runtimeParameters": {
+              "type": "string"
+            },
+            "edge": {
+              "type": "boolean"
+            },
+            "timeSeries": {
+              "type": "boolean"
+            },
+            "forceStopTimeout": {
+              "type": "integer"
+            },
+            "maxRetriesForFailedJob": {
+              "type": "integer"
+            },
+            "provenanceMetaData": {
+              "type": "null"
+            },
+            "jobTemplate": {
+              "type": "boolean"
+            },
+            "templateJobId": {
+              "type": "null"
+            },
+            "cdConfig": {
+              "type": "null"
+            },
+            "rawJobTags": {
+              "type": "array",
+              "items": {}
+            },
+            "jobTags": {
+              "type": "array",
+              "items": {}
+            },
+            "executorType": {
+              "type": "string"
+            },
+            "globalMaxRetries": {
+              "type": "integer"
+            },
+            "needsManualAck": {
+              "type": "boolean"
+            },
+            "staticParameters": {
+              "type": "array",
+              "items": {}
+            },
+            "archived": {
+              "type": "boolean"
+            },
+            "deleteAfterCompletion": {
+              "type": "boolean"
+            },
+            "draftRun": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "description",
+            "organization",
+            "creator",
+            "createTime",
+            "lastModifiedBy",
+            "lastModifiedOn",
+            "destroyer",
+            "deleteTime",
+            "jobDeleted",
+            "pipelineName",
+            "pipelineId",
+            "pipelineCommitId",
+            "rulesId",
+            "pipelineCommitLabel",
+            "labels",
+            "currentJobStatus",
+            "currentUpgradeStatus",
+            "parentJobId",
+            "systemJobId",
+            "numInstances",
+            "migrateOffsets",
+            "statsRefreshInterval",
+            "runtimeParameters",
+            "edge",
+            "timeSeries",
+            "forceStopTimeout",
+            "maxRetriesForFailedJob",
+            "provenanceMetaData",
+            "jobTemplate",
+            "templateJobId",
+            "cdConfig",
+            "rawJobTags",
+            "jobTags",
+            "executorType",
+            "globalMaxRetries",
+            "needsManualAck",
+            "staticParameters",
+            "archived",
+            "deleteAfterCompletion",
+            "draftRun"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "jobs"
+  ]
+}
